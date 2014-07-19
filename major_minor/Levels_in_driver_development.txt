@@ -1,0 +1,21 @@
+HIERARCHY FOR  DRIVER DEVELOPMENT
+
+1) APPLICATION
+
+application links to the device file by system calls
+
+eg. open(), read(), write(), close().
+
+
+2) CHARACTER DEVICE FILE 
+
+device file links to the device driver by major and 
+
+minor numbers . eg (250,0) do $ ls -l /dev/  
+
+3) CHARACTER DEVICE DRIVER
+
+Device driver gets linked to the device by device specific code.
+
+4) CHARACTER DEVICE
+
